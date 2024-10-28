@@ -1,3 +1,3 @@
 # grocery
-## Model entities for our application
+## Model entities for the application
 ![grocery model](grocery-model.png)
