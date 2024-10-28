@@ -29,10 +29,4 @@ public class OrderController {
         OrderDto order = orderService.getOrderById(idOrder);
         return ResponseEntity.ok(order);
     }
-
-    @RequestMapping("/customers/{idCustomer}/orders")
-    public ResponseEntity<List<OrderDto>> getOrders(@PathVariable("idCustomer") Long idCustomer) {
-        List<OrderDto> orders = orderService.getOrderByCustomerId(idCustomer);
-        return ResponseEntity.ok(orders);
-    }
 }
